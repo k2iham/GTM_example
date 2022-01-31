@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800;900&display=swap');
+html {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    perspective: 1000px;
+}
+
+.container {
+    margin-top: 5rem;
+    height: 40rem;
+    transform-style: preserve-3d;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 3rem;
+    // width: 20rem;
+    // background-color: lightcoral;
+    border-radius: 18px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.3);
+}
+
+.shoe {
+    background: linear-gradient(90deg, red, blue);
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    place-self: center;
+}
+
+.card {
+    place-items: center;
+    display: flex;
+    transform-style: preserve-3d;
+    flex-wrap: nowrap;
+    width: 40rem;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card>*,
+.shoe img {
+    transition: .8s;
+}
+
+img {
+    width: 15rem;
+    z-index: 1;
+    // position: absolute;
+    // left: 170px;
+}
+
+.shoe {
+    margin-bottom: 4rem;
+}
+
+p {
+    width: 18rem;
+}
+
+button {
+    font-size: medium;
+    padding: .4rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    color: black;
+    background: linear-gradient(90deg, rgb(208, 99, 99), rgb(120, 120, 220));
+}
