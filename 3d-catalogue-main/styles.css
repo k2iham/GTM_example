@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;800;900&display=swap");
+html {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100vh;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.container {
+  margin-top: 5rem;
+  height: 40rem;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3rem;
+  border-radius: 18px;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.3);
+}
+
+.shoe {
+  background: -webkit-gradient(linear, left top, right top, from(red), to(blue));
+  background: linear-gradient(90deg, red, blue);
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  place-self: center;
+}
+
+.card {
+  place-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 40rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.card > *,
+.shoe img {
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+img {
+  width: 15rem;
+  z-index: 1;
+}
+
+.shoe {
+  margin-bottom: 4rem;
+}
+
+p {
+  width: 18rem;
+}
+
+button {
+  font-size: medium;
+  padding: .4rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  color: black;
+  background: -webkit-gradient(linear, left top, right top, from(#d06363), to(#7878dc));
+  background: linear-gradient(90deg, #d06363, #7878dc);
+}
+/*# sourceMappingURL=styles.css.map */
